@@ -1,0 +1,70 @@
+StackExample:
+
+<StackExample@StackLayout>:
+    Button:
+        text:"btn"
+        size_hint: .3, .4
+    Button:
+        text:"btn"
+        size_hint: .3, .5
+    Button:
+        text:"btn"
+        size_hint: .3, .5
+    Button:
+        text:"btn"
+        size_hint: .3, .5
+    Button:
+        text:"btn"
+        size_hint: .3, .4
+    Button:
+        text:"btn"
+        size_hint: .3, .5
+    Button:
+        text:"btn"
+        size_hint: .3, .5
+
+
+<GridExample@GridLayout>:
+    rows: 2
+    cols: 3
+    Button: # 0,0
+        text: "btn"
+        size_hint: .5, 1
+    Button: # 0,1
+        text: "btn"
+    Button: # 0,2
+        text: "btn"
+    Button: # 1,0
+        text: "btn"
+        size_hint: .5, 1
+    Button: # 1,1
+        text: "btn"
+    Button: # 1,2
+        text: "btn"
+    Button: # out of bound
+        text: "btn"
+        pos:100, 200
+
+<StackExample@StackLayout>
+    Button:
+        text:"A"
+
+<AnchorExample>:
+    Button:
+        text:"btn"
+        size_hint: .2, .2
+        pos_hint:{"X":.1, "Y": .1}
+    Button:
+        text:"btn2"
+        size_hint: .1, .1
+        pos_hint:{"X":.5, "Y": .5}
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: 400, 200
+        pos: 100, 200
+    Button:
+        text: "hello2"
+        size: "400dp", "200dp" # 주석
+        pos: "100dp", "200dp"
